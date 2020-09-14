@@ -28,9 +28,3 @@ def load_data_label_combine(X_train, X_test, X_val, Y_val, X1_train, X1_test):
     X_val_all = np.hstack((X_val, Y_val))
     X_test_all = np.hstack((X_test, X1_test))
     return X_train_all, X_val_all, X_test_all
-
-
-if __name__ == '__main__':
-    X_train, Y_train, X_val, Y_val, X_test, Y_test = load_data_label('')
-    print(X_test)
-    print(Y_test)
